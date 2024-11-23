@@ -5,11 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 7: JavaScript Events</title>
     <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>JavaScript Lab 7: JavaScript Events</h1>
-    <h2>By Edgar Rory Cobb</h2>
-    <p>Please read the javascript console output :)</p>
- 
+<div class="section">
+    <h2>Mouse Events</h2>
+    <button id="mouseButton">Hover over this button!</button>
+    <p id="mouseMessage">Your mouse is not hovering over the button!</p>
+</div>
+
+<div class="section">
+    <h2>Keyboard Events</h2>
+    <input type="text" id="keyboardInput" placeholder="Press a key!">
+    <p id="keyboardMessage">Press any key to display it here.</p>
+</div>
+
+<div class="section">
+    <h2>Form Events</h2>
+    <form id="eventForm">
+        <input type="text" placeholder="Type something..." required>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+</div>
+
+<div class="section">
+    <h2>Focus and Blur Events</h2>
+    <input type="text" id="focusInput" placeholder="Focus on me!">
+    <p id="focusMessage">You are not focused on the input field above!</p>
+</div>
+
+<div class="section">
+    <h2>Event Delegation</h2>
+    <div id="buttonContainer">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+    </div>
+    <p id="delegationMessage">Click one of the buttons!</p>
+</div>
+
 </body>
 </html>
